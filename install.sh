@@ -3,7 +3,7 @@
 # dotfiles for devcontainer, bash
 dotfiles_dir=$(dirname "$0")
 
-apt install -y git exa curl
+apt install -y git exa curl 
 
 # remote container settingsのリンクを作成
 touch ~/.vscode-server/data/Machine/settings.json

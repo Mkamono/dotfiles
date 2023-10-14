@@ -14,5 +14,3 @@ alias ll="exa -l"
 alias tr="exa -T"
 alias ta="exa -Ta"
 alias rmrf="rm -rfi"
-
-echo -e "✨ \e[36;1menabled alias\e[m"
