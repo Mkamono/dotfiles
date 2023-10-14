@@ -1,4 +1,3 @@
-#! /bin/bash
 alias c="clear"
 alias e="exit"
 alias ..="cd .."
