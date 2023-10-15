@@ -21,7 +21,7 @@ curl -o ~/.git-prompt.sh \
 rm ./.devcontainer/.bashrc ~/.bashrc
 ln -sf ~/.bashrc ./.devcontainer/.bashrc
 
-cat "$dotfiles_dir"/alias/* "$dotfiles_dir"/prompt.sh >>~/.bashrc
+cat "$dotfiles_dir"/bashrcs/* >>~/.bashrc
 
 source ~/.bashrc
 
