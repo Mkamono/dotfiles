@@ -15,3 +15,8 @@ alias ll="exa -l"
 alias tr="exa -T"
 alias ta="exa -Ta"
 alias rmrf="rm -rfi"
+
+function reset-dotfiles() {
+    rm ./.gitignore ./.vscode/remote-settings.json ./.devcontainer/.bashrc
+    rm -rf ./dotfiles
+}
