@@ -25,3 +25,8 @@ ln -sf ~/.bashrc ./.devcontainer/.bashrc
 cat "$dotfiles_dir"/alias/common.sh "$dotfiles_dir"/alias/git.sh "$dotfiles_dir"/prompt.sh >> ~/.bashrc
 
 source ~/.bashrc
+
+# .gitignoreでdotfilesを無視
+if ! test -f ./.gitignore; then
+    echo "dotfiles/" >> ./.gitignore
+fi
