@@ -1,13 +1,14 @@
 #! /bin/bash
+cd ..
 
 # dotfiles for devcontainer, bash
-dotfiles_dir=$(dirname "$0")
+dotfiles_dir="./dotfiles"
 
 apt install -y git exa curl
 
 # remote container settingsのリンクを作成
 touch ~/.vscode-server/data/Machine/settings.json
-cat "$dotfiles_dir"/.vscode/settings.json >>~/.vscode-server/data/Machine/settings.json
+cp "$dotfiles_dir"/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
 mkdir -p ./.vscode
 ln -sf ~/.vscode-server/data/Machine/settings.json ./.vscode/remote-settings.json
 

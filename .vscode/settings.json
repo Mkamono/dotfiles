@@ -1,4 +1,6 @@
 {
+    "dotfiles.repository": "https://github.com/Mkamono/dotfiles.git",
+    "dotfiles.targetPath": "./workspaces/${localWorkspaceFolderBasename}/dotfiles",
     "editor.guides.bracketPairs": true,
     "editor.stickyScroll.enabled": true,
     "terminal.integrated.cursorBlinking": true,
