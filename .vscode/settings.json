@@ -33,6 +33,6 @@
         "source.organizeImports": true
     },
     "notebook.formatOnSave.enabled": true,
-    "python.analysis.typeCheckingMode": "basic",
-    "python.formatting.provider": "none"
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
 }
