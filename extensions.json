@@ -4,23 +4,30 @@
             "ms-azuretools.vscode-docker",
             "GitHub.copilot",
             "GitHub.copilot-chat",
-            "cweijan.vscode-database-client2",
             "rangav.vscode-thunder-client",
             "streetsidesoftware.code-spell-checker",
+            "usernamehw.errorlens"
+        ],
+        "git": [
             "eamodio.gitlens",
             "GitHub.vscode-pull-request-github",
             "redjue.git-commit-plugin",
-            "mhutchie.git-graph",
-            "usernamehw.errorlens"
+            "mhutchie.git-graph"
         ],
         "python": [
             "ms-python.python",
+            "ms-toolsai.jupyter",
+            "njpwerner.autodocstring",
             "ms-python.isort",
             "ms-python.black-formatter"
         ],
         "shell": [
             "foxundermoon.shell-format",
             "timonwong.shellcheck"
+        ],
+        "db": [
+            "cweijan.vscode-database-client2",
+            "qwtel.sqlite-viewer"
         ]
     }
 }
