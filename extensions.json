@@ -17,6 +17,10 @@
             "ms-python.python",
             "ms-python.isort",
             "ms-python.black-formatter"
+        ],
+        "shell": [
+            "foxundermoon.shell-format",
+            "timonwong.shellcheck"
         ]
     }
 }
