@@ -1,0 +1,3 @@
+# dotfiles settings
+.devcontainer/.bashrc
+.vscode/remote-settings.json

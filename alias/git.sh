@@ -1,5 +1,7 @@
 #! /bin/bash
 
+source /usr/share/bash-completion/completions/git
+
 function gd() {
     git fetch --prune
     number_of_branches=$(git branch | wc -l)

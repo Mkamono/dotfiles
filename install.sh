@@ -27,5 +27,5 @@ source ~/.bashrc
 
 # .gitignoreでdotfilesを無視
 if ! test -f ./.gitignore; then
-    echo "dotfiles/" >>./.gitignore
+    cat "$dotfiles_dir"/ignorelist.txt >>./.gitignore
 fi
