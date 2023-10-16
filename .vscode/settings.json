@@ -3,13 +3,15 @@
     "dotfiles.targetPath": "./workspaces/${localWorkspaceFolderBasename}/dotfiles",
     "editor.guides.bracketPairs": true,
     "editor.stickyScroll.enabled": true,
+    "editor.formatOnSave": true,
+    "diffEditor.experimental.showMoves": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.cursorStyleInactive": "line",
     "terminal.integrated.cursorWidth": 2,
     "terminal.integrated.rightClickBehavior": "default",
     "terminal.integrated.tabs.focusMode": "singleClick",
-    "editor.formatOnSave": true,
     "files.autoGuessEncoding": true,
     "files.insertFinalNewline": true,
     "workbench.editor.tabSizing": "fixed",
@@ -29,10 +31,15 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
+    "isort.check": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
     "notebook.formatOnSave.enabled": true,
+    "notebook.diff.ignoreMetadata": true,
+    "notebook.diff.ignoreOutputs": true,
+    "notebook.output.scrolling": true,
+    "notebook.output.textLineLimit": 10,
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic"
 }
