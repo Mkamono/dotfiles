@@ -17,6 +17,7 @@ alias ll="exa -l"
 alias tr="exa -T"
 alias ta="exa -Ta"
 alias rmrf="rm -rfi"
+alias xx="chmod +x"
 
 function reset-dotfiles() {
     rm "${workspace_dir}"/.vscode/remote-settings.json "${workspace_dir}"/.devcontainer/.bashrc
