@@ -1,6 +1,7 @@
 #! /bin/bash
 
-source /usr/share/bash-completion/completions/git
+source ~/.git-completion.sh
+
 
 function gd() {
     git fetch --prune

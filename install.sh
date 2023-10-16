@@ -17,6 +17,10 @@ curl -o ~/.git-prompt.sh \
     https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 # [bashrc] source ~/.git-prompt.sh
 
+curl -o ~/.git-completion.sh \
+    https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+# [bashrc] source ~/.git-completion.sh
+
 # .bashrcのリンクを作成
 rm "${workspace_dir}"/.devcontainer/.bashrc ~/.bashrc
 ln -sf ~/.bashrc "${workspace_dir}"/.devcontainer/.bashrc
