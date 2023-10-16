@@ -1,5 +1,7 @@
 #! /bin/bash
 
+workspace_dir=$(ls -d /workspaces/*)
+dotfiles_dir="${workspace_dir}/dotfiles"
 alias c="clear"
 alias e="exit"
 alias ..="cd .."
@@ -17,6 +19,6 @@ alias ta="exa -Ta"
 alias rmrf="rm -rfi"
 
 function reset-dotfiles() {
-    rm  ./.vscode/remote-settings.json ./.devcontainer/.bashrc
-    rm -rf ./dotfiles
+    rm "${workspace_dir}"/.vscode/remote-settings.json "${workspace_dir}"/.devcontainer/.bashrc
+    rm -rf "${dotfiles_dir}"
 }

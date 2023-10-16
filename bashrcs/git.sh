@@ -19,4 +19,11 @@ function gd() {
     fi
 }
 
+function make_github_template() {
+    if [ ! -d .github ]; then
+        mkdir .github
+        cp "${dotfiles_dir}"/.github/* ./.github
+    fi
+}
+
 alias gpr="git pull --rebase origin main"

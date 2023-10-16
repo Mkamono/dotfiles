@@ -1,25 +1,25 @@
 #! /bin/bash
 
 function cmext() {
-    cd dotfiles || return
+    cd "${dotfiles_dir}" || return
     for item in $(jq -r '.extensions.common[]' extensions.json); do
         code --install-extension "$item"
     done
-    cd ..
+    cd -
 }
 
 function pyext() {
-    cd dotfiles || return
+    cd "${dotfiles_dir}" || return
     for item in $(jq -r '.extensions.python[]' extensions.json); do
         code --install-extension "$item"
     done
-    cd ..
+    cd -
 }
 
 function shext() {
-    cd dotfiles || return
+    cd "${dotfiles_dir}" || return
     for item in $(jq -r '.extensions.shell[]' extensions.json); do
         code --install-extension "$item"
     done
-    cd ..
+    cd -
 }

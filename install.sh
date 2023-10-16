@@ -2,15 +2,15 @@
 cd ..
 
 # dotfiles for devcontainer, bash
-dotfiles_dir="./dotfiles"
-
-apt install -y git exa curl
+workspace_dir=$(ls -d /workspaces/*)
+dotfiles_dir="${workspace_dir}/dotfiles"
+apt install -y git exa curl jq
 
 # remote container settingsのリンクを作成
 touch ~/.vscode-server/data/Machine/settings.json
-cp "$dotfiles_dir"/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
-mkdir -p ./.vscode
-ln -sf ~/.vscode-server/data/Machine/settings.json ./.vscode/remote-settings.json
+cp "${dotfiles_dir}"/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
+mkdir -p "${workspace_dir}"/.vscode
+ln -sf ~/.vscode-server/data/Machine/settings.json "${workspace_dir}"/.vscode/remote-settings.json
 
 # git-promptのダウンロード
 curl -o ~/.git-prompt.sh \
@@ -18,14 +18,14 @@ curl -o ~/.git-prompt.sh \
 # [bashrc] source ~/.git-prompt.sh
 
 # .bashrcのリンクを作成
-rm ./.devcontainer/.bashrc ~/.bashrc
-ln -sf ~/.bashrc ./.devcontainer/.bashrc
+rm "${workspace_dir}"/.devcontainer/.bashrc ~/.bashrc
+ln -sf ~/.bashrc "${workspace_dir}"/.devcontainer/.bashrc
 
-cat "$dotfiles_dir"/bashrcs/* >>~/.bashrc
+cat "${dotfiles_dir}"/bashrcs/* >>~/.bashrc
 
 source ~/.bashrc
 
 # .gitignoreでdotfilesを無視
-if ! test -f ./.gitignore; then
-    cat "$dotfiles_dir"/ignorelist.txt >>./.gitignore
+if ! test -f "${workspace_dir}"/.gitignore; then
+    cat "${dotfiles_dir}"/ignorelist.txt >>"${workspace_dir}"/.gitignore
 fi
