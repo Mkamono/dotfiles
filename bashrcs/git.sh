@@ -22,7 +22,7 @@ function gd() {
 function make_github_template() {
     if [ ! -d .github ]; then
         mkdir .github
-        cp "${dotfiles_dir}"/.github/* ./.github
+        cp "${dotfiles_dir}"/.github-template/* ./.github
     fi
 }
 
