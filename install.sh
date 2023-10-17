@@ -26,6 +26,10 @@ curl -o ~/.git-completion.sh \
 rm "${workspace_dir}"/.devcontainer/.bashrc ~/.bashrc
 ln -sf ~/.bashrc "${workspace_dir}"/.devcontainer/.bashrc
 
+if [ -d ~/.config ]; then
+    ln -sf ~/.config/ "${workspace_dir}"/.devcontainer/.config
+fi
+
 cat "${dotfiles_dir}"/bashrcs/* >>~/.bashrc
 
 source ~/.bashrc
