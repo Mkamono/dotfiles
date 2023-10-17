@@ -4,6 +4,7 @@ cd ..
 # dotfiles for devcontainer, bash
 workspace_dir=$(ls -d /workspaces/*)
 dotfiles_dir="${workspace_dir}/dotfiles"
+apt update
 apt install -y git exa curl jq
 
 # remote container settingsのリンクを作成
