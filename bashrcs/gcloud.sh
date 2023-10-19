@@ -26,13 +26,13 @@ function install_cloud_sql_proxy() {
 
 function start_cloud_sql_proxy() {
     if [ -z "$INSTANCE_CONNECTION_NAME" ]; then
-        read -p "SQL接続名を入力してください : " INPUT_STR
+        read -rp "SQL接続名を入力してください : " INPUT_STR
         export INSTANCE_CONNECTION_NAME=$INPUT_STR
     fi
     "${workspace_dir}"/cloud-sql-proxy "$INSTANCE_CONNECTION_NAME"
 }
 
-function gcloud_setup(){
+function gcloud_setup() {
     gcloud init
     gcloud auth list
     gcloud auth application-default login
