@@ -29,6 +29,10 @@ function start_cloud_sql_proxy() {
         read -rp "SQL接続名を入力してください : " INPUT_STR
         export INSTANCE_CONNECTION_NAME=$INPUT_STR
     fi
+    if [ -z "$INSTANCE_CONNECTION_NAME" ]; then
+        echo "SQL接続名が入力されていません"
+        return
+    fi
     "${workspace_dir}"/cloud-sql-proxy "$INSTANCE_CONNECTION_NAME"
 }
 
