@@ -13,6 +13,8 @@ cp "${dotfiles_dir}"/.vscode/settings.json ~/.vscode-server/data/Machine/setting
 mkdir -p "${workspace_dir}"/.vscode
 ln -sf ~/.vscode-server/data/Machine/settings.json "${workspace_dir}"/.vscode/remote-settings.json
 
+rm -r "${workspace_dir}"/.devcontainer/.config
+
 # git-promptのダウンロード
 curl -o ~/.git-prompt.sh \
     https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
