@@ -1,10 +1,8 @@
 # IT'S MY DOTFILES
 ## Usage
 devcontainerに使用するイメージにgitがインストールされていることを確認してください。
-下記のコマンドでdotfilesをアンインストールできます。
-```
-reset-dotfiles
-```
+`reset-dotfiles`でdotfilesをアンインストールできます。
+
 ### Install
 .devcontainer.jsonに以下を追記してください。
 ```json
