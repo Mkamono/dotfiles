@@ -17,6 +17,9 @@ function gaj() {
 }
 
 function install_cloud_sql_proxy() {
+    if [ -e "${workspace_dir}"/cloud-sql-proxy ]; then
+        return
+    fi
     curl -o "${workspace_dir}"/cloud-sql-proxy https://storage.googleapis.com/cloud-sql-connectors/cloud-sql-proxy/v2.7.0/cloud-sql-proxy.linux.amd64
     chmod +x "${workspace_dir}"/cloud-sql-proxy
 }
