@@ -30,6 +30,12 @@ ln -sf ~/.bashrc "${workspace_dir}"/.devcontainer/.bashrc
 
 cat "${dotfiles_dir}"/bashrcs/* >>~/.bashrc
 
+if ! test -f "${workspace_dir}"/.devcontainer/additional.bashrc; then
+    echo "#! /bin/bash" >>"${workspace_dir}"/.devcontainer/additional.bashrc
+fi
+
+cat "${workspace_dir}"/.devcontainer/additional.bashrc >>~/.bashrc
+
 source ~/.bashrc
 
 # .gitignoreでdotfilesを無視

@@ -1,4 +1,5 @@
 # dotfiles settings
 .devcontainer/.bashrc
+.devcontainer/additional.bashrc
 .vscode/remote-settings.json
 .config
