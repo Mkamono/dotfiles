@@ -28,6 +28,10 @@
         "db": [
             "cweijan.vscode-database-client2",
             "qwtel.sqlite-viewer"
+        ],
+        "share": [
+            "adpyke.codesnap",
+            "MS-vsliveshare.vsliveshare"
         ]
     }
 }
