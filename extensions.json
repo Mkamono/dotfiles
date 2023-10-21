@@ -12,7 +12,8 @@
             "eamodio.gitlens",
             "GitHub.vscode-pull-request-github",
             "redjue.git-commit-plugin",
-            "mhutchie.git-graph"
+            "mhutchie.git-graph",
+            "codezombiech.gitignore"
         ],
         "python": [
             "ms-python.python",
