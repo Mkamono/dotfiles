@@ -42,5 +42,8 @@
     "notebook.output.scrolling": true,
     "notebook.output.textLineLimit": 10,
     "python.analysis.autoImportCompletions": true,
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
