@@ -45,5 +45,6 @@
     "python.analysis.typeCheckingMode": "basic",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "go.toolsManagement.autoUpdate": true
 }
