@@ -23,6 +23,7 @@
         "remote-settings.json": "jsonc"
     },
     "workbench.editor.tabSizing": "fixed",
+    "editor.fontFamily": "Hack, 'Noto Sans JP', monospace",
     // git
     "git.confirmSync": false,
     "GitCommitPlugin.MaxSubjectCharacters": 30,
