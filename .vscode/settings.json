@@ -4,7 +4,11 @@
     "dotfiles.targetPath": "./workspaces/${localWorkspaceFolderBasename}/dotfiles",
     "editor.guides.bracketPairs": true,
     "editor.stickyScroll.enabled": true,
+    "editor.dragAndDrop": false,
     "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
     "diffEditor.experimental.showMoves": true,
     "diffEditor.hideUnchangedRegions.enabled": true,
     "terminal.integrated.cursorBlinking": true,
@@ -15,10 +19,10 @@
     "terminal.integrated.tabs.focusMode": "singleClick",
     "files.autoGuessEncoding": true,
     "files.insertFinalNewline": true,
-    "workbench.editor.tabSizing": "fixed",
     "files.associations": {
         "remote-settings.json": "jsonc"
     },
+    "workbench.editor.tabSizing": "fixed",
     // git
     "git.confirmSync": false,
     "GitCommitPlugin.MaxSubjectCharacters": 30,
