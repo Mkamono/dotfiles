@@ -20,7 +20,8 @@
     "files.autoGuessEncoding": true,
     "files.insertFinalNewline": true,
     "files.associations": {
-        "remote-settings.json": "jsonc"
+        "remote-settings.json": "jsonc",
+        "ignorelist.txt": "ignore"
     },
     "workbench.editor.tabSizing": "fixed",
     // git
