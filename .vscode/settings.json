@@ -1,5 +1,5 @@
 {
-    "git.confirmSync": false,
+    // common
     "dotfiles.repository": "https://github.com/Mkamono/dotfiles.git",
     "dotfiles.targetPath": "./workspaces/${localWorkspaceFolderBasename}/dotfiles",
     "editor.guides.bracketPairs": true,
@@ -16,19 +16,14 @@
     "files.autoGuessEncoding": true,
     "files.insertFinalNewline": true,
     "workbench.editor.tabSizing": "fixed",
-    "thunder-client.indentSize": 4,
+    "files.associations": {
+        "remote-settings.json": "jsonc"
+    },
+    // git
+    "git.confirmSync": false,
     "GitCommitPlugin.MaxSubjectCharacters": 30,
     "git.autofetch": "all",
-    "cSpell.ignorePaths": [
-        "package-lock.json",
-        "node_modules",
-        "vscode-extension",
-        ".git/objects",
-        ".vscode",
-        ".vscode-insiders",
-        ".devcontainer",
-        "dotfiles"
-    ],
+    // python
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
@@ -43,8 +38,27 @@
     "notebook.output.textLineLimit": 10,
     "python.analysis.autoImportCompletions": true,
     "python.analysis.typeCheckingMode": "basic",
+    // other extensions
+    "thunder-client.indentSize": 4,
+    "cSpell.ignorePaths": [
+        "package-lock.json",
+        "node_modules",
+        "vscode-extension",
+        ".git/objects",
+        ".vscode",
+        ".vscode-insiders",
+        ".devcontainer",
+        "dotfiles"
+    ],
+    // language specific
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "[shellscript]": {
+        "editor.defaultFormatter": "foxundermoon.shell-format"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
 }
