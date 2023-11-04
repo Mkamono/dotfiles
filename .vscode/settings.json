@@ -23,6 +23,17 @@
         "remote-settings.json": "jsonc",
         "ignorelist.txt": "ignore"
     },
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "settings.json",
+                "remote-settings.json"
+            ],
+            "schema": {
+                "allowTrailingCommas": true
+            }
+        }
+    ],
     "workbench.editor.tabSizing": "fixed",
     // git
     "git.confirmSync": false,
@@ -65,5 +76,5 @@
     },
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
-    }
+    },
 }
