@@ -40,5 +40,5 @@ source ~/.bashrc
 
 # .gitignoreでdotfilesを無視
 if ! test -f "${workspace_dir}"/.gitignore; then
-    cat "${dotfiles_dir}"/ignorelist.txt >>"${workspace_dir}"/.gitignore
+    cat "${dotfiles_dir}"/.gitignore.init >>"${workspace_dir}"/.gitignore
 fi
