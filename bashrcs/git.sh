@@ -26,4 +26,21 @@ function make_github_template() {
     fi
 }
 
-alias gpr="git pull --rebase origin main"
+function gpf() {
+    git push --force-with-lease
+}
+
+function gpr() {
+    git pull --rebase origin main
+    echo -n "execute 'git push force-with-lease' ? [Y/n]: "
+    read -r ANS
+
+    case $ANS in
+    "" | [Yy]*)
+        gpf
+        ;;
+    *)
+        # 「No」の場合の処理
+        ;;
+    esac
+}
