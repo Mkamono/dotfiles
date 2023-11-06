@@ -1,5 +1,10 @@
 #! /bin/bash
 
+if [ ! "${REMOTE_CONTAINERS}" ]; then
+    echo "not remote container"
+    exit 0
+fi
+
 workspace_dir=$(ls -d /workspaces/*)
 dotfiles_dir="${workspace_dir}/dotfiles"
 alias c="clear"
