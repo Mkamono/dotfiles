@@ -2,7 +2,9 @@
 
 source ~/.git-completion.sh
 
-default_branch=$(git branch -l | cut -d ' ' -f 2)
+function default_branch() {
+    git branch -l | cut -d ' ' -f 2 | tr -d '\n'
+}
 
 function gd() {
     git fetch --prune
@@ -11,11 +13,11 @@ function gd() {
     if [ "${number_of_branches}" -eq 1 ]; then
         echo 'only one branch'
     else
-        if [ "${current_branch}" = "${default_branch}" ]; then
-            git branch | grep -v "${default_branch}" | xargs git branch -D
+        if [ "${current_branch}" = "$(default_branch)" ]; then
+            git branch | grep -v "$(default_branch)" | xargs git branch -D
         else
             git checkout main &&
-                git branch | grep -v "${default_branch}" | xargs git branch -d &&
+                git branch | grep -v "$(default_branch)" | xargs git branch -d &&
                 git checkout "${current_branch}"
         fi
     fi
