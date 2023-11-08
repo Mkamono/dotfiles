@@ -57,7 +57,9 @@
     // other extensions
     "thunder-client.indentSize": 4,
     "cSpell.ignorePaths": [
+        "package.json",
         "package-lock.json",
+        "yarn.lock",
         "node_modules",
         "vscode-extension",
         ".git/objects",
