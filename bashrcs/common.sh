@@ -30,7 +30,7 @@ function install_bottom() {
     rm bottom_0.9.6_amd64.deb
 }
 
-alias btm="btm || ( install_bottom && btm )"
+alias btm="( btm -h >/dev/null || install_bottom ) && btm"
 
 function install_watchexec() {
     curl -fsSL https://apt.cli.rs/pubkey.asc | tee -a /usr/share/keyrings/rust-tools.asc
@@ -39,7 +39,7 @@ function install_watchexec() {
     apt install -y watchexec-cli
 }
 
-alias watchexec='watchexec --poll 100 || ( install_watchexec && watchexec --poll 100 )'
+alias watchexec="( watchexec -h >/dev/null || install_watchexec ) && watchexec --poll 100"
 
 function reset-dotfiles() {
     rm "${workspace_dir}"/.vscode/remote-settings.json "${workspace_dir}"/.devcontainer/.bashrc
