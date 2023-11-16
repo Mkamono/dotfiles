@@ -7,6 +7,13 @@ dotfiles_dir="${workspace_dir}/dotfiles"
 apt update
 apt install -y git exa curl jq
 
+# install watchexec
+curl -fsSL https://apt.cli.rs/pubkey.asc | tee -a /usr/share/keyrings/rust-tools.asc
+curl -fsSL https://apt.cli.rs/rust-tools.list | tee /etc/apt/sources.list.d/rust-tools.list
+apt update
+apt install -y watchexec
+alias watchexec='watchexec --poll 100'
+
 # remote container settingsのリンクを作成
 touch ~/.vscode-server/data/Machine/settings.json
 cp "${dotfiles_dir}"/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
