@@ -23,7 +23,23 @@ alias tre="exa -T"
 alias tra="exa -Ta"
 alias rmrf="rm -rfi"
 alias xx="chmod +x"
-alias watchexec='watchexec --poll 100'
+
+function install_bottom() {
+    curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
+    dpkg -i bottom_0.9.6_amd64.deb
+    rm bottom_0.9.6_amd64.deb
+}
+
+alias btm="btm || ( install_bottom && btm )"
+
+function install_watchexec() {
+    curl -fsSL https://apt.cli.rs/pubkey.asc | tee -a /usr/share/keyrings/rust-tools.asc
+    curl -fsSL https://apt.cli.rs/rust-tools.list | tee /etc/apt/sources.list.d/rust-tools.list
+    apt update
+    apt install -y watchexec-cli
+}
+
+alias watchexec='watchexec --poll 100 || ( install_watchexec && watchexec --poll 100 )'
 
 function reset-dotfiles() {
     rm "${workspace_dir}"/.vscode/remote-settings.json "${workspace_dir}"/.devcontainer/.bashrc
