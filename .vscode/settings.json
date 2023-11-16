@@ -23,6 +23,7 @@
         "remote-settings.json": "jsonc",
         ".gitignore.init": "ignore"
     },
+    "files.eol": "\n",
     "json.schemas": [
         {
             "fileMatch": [
