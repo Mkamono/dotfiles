@@ -11,8 +11,7 @@ apt install -y git exa curl jq
 curl -fsSL https://apt.cli.rs/pubkey.asc | tee -a /usr/share/keyrings/rust-tools.asc
 curl -fsSL https://apt.cli.rs/rust-tools.list | tee /etc/apt/sources.list.d/rust-tools.list
 apt update
-apt install -y watchexec
-alias watchexec='watchexec --poll 100'
+apt install -y watchexec-cli
 
 # remote container settingsのリンクを作成
 touch ~/.vscode-server/data/Machine/settings.json

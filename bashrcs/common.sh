@@ -23,6 +23,7 @@ alias tre="exa -T"
 alias tra="exa -Ta"
 alias rmrf="rm -rfi"
 alias xx="chmod +x"
+alias watchexec='watchexec --poll 100'
 
 function reset-dotfiles() {
     rm "${workspace_dir}"/.vscode/remote-settings.json "${workspace_dir}"/.devcontainer/.bashrc
