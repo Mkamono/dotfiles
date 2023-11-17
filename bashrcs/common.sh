@@ -25,9 +25,23 @@ alias rmrf="rm -rfi"
 alias xx="chmod +x"
 
 function install_bottom() {
-    curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
-    dpkg -i bottom_0.9.6_amd64.deb
-    rm bottom_0.9.6_amd64.deb
+
+    case "$(uname -m)" in
+    "aarch64")
+        curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_arm64.deb
+        dpkg -i bottom_0.9.6_arm64.deb
+        rm bottom_0.9.6_arm64.deb
+        ;;
+    "x86_64")
+        curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_amd64.deb
+        dpkg -i bottom_0.9.6_amd64.deb
+        rm bottom_0.9.6_amd64.deb
+        ;;
+    *)
+        echo "not supported"
+        exit 1
+        ;;
+    esac
 }
 
 alias btm="( btm -h >/dev/null || install_bottom ) && btm"
