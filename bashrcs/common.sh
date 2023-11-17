@@ -25,7 +25,6 @@ alias rmrf="rm -rfi"
 alias xx="chmod +x"
 
 function install_bottom() {
-
     case "$(uname -m)" in
     "aarch64")
         curl -LO https://github.com/ClementTsang/bottom/releases/download/0.9.6/bottom_0.9.6_arm64.deb
