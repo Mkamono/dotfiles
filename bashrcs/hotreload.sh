@@ -13,5 +13,5 @@ function hr() {
     watchexec \
         -w "${workspace_dir}"/.devcontainer/additional.bashrc \
         -w "${dotfiles_dir}"/bashrcs \
-        "bash -c 'source ~/.bashrc && hotreload_bashrc'"
+        "bash -c 'hotreload_bashrc && source ~/.bashrc'"
 }
