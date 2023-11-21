@@ -21,7 +21,8 @@
             "ms-toolsai.jupyter",
             "njpwerner.autodocstring",
             "ms-python.isort",
-            "ms-python.black-formatter"
+            "ms-python.black-formatter",
+            "mgesbert.python-path"
         ],
         "shell": [
             "foxundermoon.shell-format",
