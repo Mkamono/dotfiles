@@ -20,7 +20,7 @@
             "ms-python.python",
             "ms-toolsai.jupyter",
             "njpwerner.autodocstring",
-            "ms-python.isort",
+            "charliermarsh.ruff",
             "ms-python.black-formatter",
             "mgesbert.python-path"
         ],
