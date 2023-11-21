@@ -22,7 +22,8 @@
             "njpwerner.autodocstring",
             "charliermarsh.ruff",
             "ms-python.black-formatter",
-            "mgesbert.python-path"
+            "mgesbert.python-path",
+            "ms-toolsai.datawrangler"
         ],
         "shell": [
             "foxundermoon.shell-format",
