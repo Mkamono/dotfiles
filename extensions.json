@@ -6,7 +6,8 @@
             "GitHub.copilot-chat",
             "rangav.vscode-thunder-client",
             "streetsidesoftware.code-spell-checker",
-            "usernamehw.errorlens"
+            "usernamehw.errorlens",
+            "PKief.material-icon-theme"
         ],
         "git": [
             "eamodio.gitlens",
@@ -33,6 +34,12 @@
         "share": [
             "adpyke.codesnap",
             "MS-vsliveshare.vsliveshare"
+        ],
+        "doc": [
+            "cweijan.vscode-office"
+        ],
+        "frontend": [
+            "formulahendry.auto-rename-tag"
         ]
     }
 }
