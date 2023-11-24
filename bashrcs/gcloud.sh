@@ -36,7 +36,22 @@ function start_cloud_sql_proxy() {
     "${workspace_dir}"/.devcontainer/cloud-sql-proxy "${INSTANCE_CONNECTION_NAME}"
 }
 
+function check_installed_gcloud_cli() {
+    if command -v gcloud >/dev/null 2>&1; then
+        echo "command -v gcloud is installed"
+    else
+        echo "command -v gcloud is not installed"
+        echo "Add the following to your devcontainer.json"
+        echo '"features": {'
+        echo '    "ghcr.io/dhoeric/features/google-cloud-cli": {}'
+        echo '},'
+        read -rp "Press enter to exit"
+        exit 1
+    fi
+}
+
 function gcloud_setup() {
+    check_installed_gcloud_cli
     gcloud init
     gcloud auth list
     gcloud auth application-default login
