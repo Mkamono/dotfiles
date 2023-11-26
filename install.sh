@@ -12,7 +12,7 @@ touch ~/.vscode-server/data/Machine/settings.json
 cp "${dotfiles_dir}"/.vscode/settings.json ~/.vscode-server/data/Machine/settings.json
 mkdir -p "${workspace_dir}"/.vscode
 ln -sf ~/.vscode-server/data/Machine/settings.json "${workspace_dir}"/.vscode/remote-settings.json
-cp "${dotfiles_dir}"/.vscode/extensions.json "${workspace_dir}"/.vscode/extensions.json
+cp -n "${dotfiles_dir}"/.vscode/extensions.json "${workspace_dir}"/.vscode/extensions.json
 
 rm -r "${workspace_dir}"/.devcontainer/.config
 
