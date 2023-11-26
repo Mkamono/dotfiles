@@ -39,6 +39,8 @@ cat "${workspace_dir}"/.devcontainer/additional.bashrc >>~/.bashrc
 
 source ~/.bashrc
 
+go help >/dev/null && install_go_tools
+
 # .gitignoreでdotfilesを無視
 if ! test -f "${workspace_dir}"/.gitignore; then
     cat "${dotfiles_dir}"/.gitignore.init >>"${workspace_dir}"/.gitignore

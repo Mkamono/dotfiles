@@ -25,6 +25,9 @@
             "mgesbert.python-path",
             "ms-toolsai.datawrangler"
         ],
+        "go": [
+            "golang.go"
+        ],
         "shell": [
             "foxundermoon.shell-format",
             "timonwong.shellcheck"
