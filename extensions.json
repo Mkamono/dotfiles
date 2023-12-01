@@ -21,7 +21,6 @@
             "ms-toolsai.jupyter",
             "njpwerner.autodocstring",
             "charliermarsh.ruff",
-            "ms-python.black-formatter",
             "mgesbert.python-path",
             "ms-toolsai.datawrangler"
         ],
