@@ -88,3 +88,5 @@ function jsonc2json() {
     cp -f $temp2 "$output"
     rm -r $temp $temp2
 }
+
+alias yq="( yq -h >/dev/null || apt install -y yq ) && yq"
