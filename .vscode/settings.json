@@ -43,9 +43,8 @@
     "git.autofetch": "all",
     // python
     "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
+        "editor.defaultFormatter": "charliermarsh.ruff"
     },
-    "isort.check": true,
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
