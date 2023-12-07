@@ -22,7 +22,8 @@
             "njpwerner.autodocstring",
             "charliermarsh.ruff",
             "mgesbert.python-path",
-            "ms-toolsai.datawrangler"
+            "ms-toolsai.datawrangler",
+            "ms-python.vscode-pylance"
         ],
         "go": [
             "golang.go"
