@@ -45,3 +45,6 @@ go help >/dev/null && install_go_tools
 if ! test -f "${workspace_dir}"/.gitignore; then
     cat "${dotfiles_dir}"/.gitignore.init >>"${workspace_dir}"/.gitignore
 fi
+
+# gitattirbutesの作成
+cp -n "${dotfiles_dir}"/.gitattributes "${workspace_dir}"/.gitattributes
