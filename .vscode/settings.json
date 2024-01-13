@@ -38,6 +38,8 @@
         }
     ],
     "workbench.editor.tabSizing": "fixed",
+    "remote.downloadExtensionsLocally": true,
+    "terminal.integrated.smoothScrolling": true,
     // git
     "git.confirmSync": false,
     "GitCommitPlugin.MaxSubjectCharacters": 30,
@@ -70,6 +72,7 @@
         ".devcontainer",
         "dotfiles"
     ],
+    "cSpell.autoFormatConfigFile": true,
     // language specific
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
