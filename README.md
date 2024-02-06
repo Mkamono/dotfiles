@@ -1,10 +1,14 @@
 # IT'S MY DOTFILES
+
 ## Usage
+
 devcontainerに使用するイメージにgitがインストールされていることを確認してください。
 `reset-dotfiles`でdotfilesをアンインストールできます。
 
 ### Install
+
 .devcontainer.jsonに以下を追記してください。
+
 ```json
     "customizations": {
         "vscode": {
@@ -15,7 +19,9 @@ devcontainerに使用するイメージにgitがインストールされてい�
         }
     },
 ```
+
 ### Features
+
 - カスタマイズされたプロンプト
 - 基本的なエイリアス
 - 拡張機能パックをコマンドで一括インストール
